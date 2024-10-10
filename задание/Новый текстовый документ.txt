@@ -1,0 +1,5 @@
+git init
+git add remode origin
+git add .
+git commit -m
+git push -u remode master
