@@ -5,7 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:People"
         mc:Ignorable="d"
-        Title="ИС по прокату спортивного инвентаря" Height="650" Width="1000" MinHeight="650" MinWidth="1000" >
+        Title="ИС по прокату спортивного инвентаря" Height="650" Width="1000" MinHeight="650" MinWidth="1000"
+        WindowStartupLocation="CenterScreen">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="70"></RowDefinition>
@@ -13,9 +14,9 @@
         </Grid.RowDefinitions>
         <Grid Grid.Row="0" Background="#FF76E383">
             <TextBlock Text="ИС по прокату спортивного инвентаря" FontSize="25"></TextBlock>
-            <Image Source="Resourses/logo.png" Margin="0,0,550,0"></Image>
+            <Image Source="Resourses/logo.png" Margin="10,0,0,0" HorizontalAlignment="Left"></Image>
         </Grid>
-        <Frame x:Name="MainFrame" ></Frame>
+        <Frame x:Name="MainFrame" NavigationUIVisibility="Hidden" Grid.Row="1" ></Frame>
         
     </Grid>
 </Window>

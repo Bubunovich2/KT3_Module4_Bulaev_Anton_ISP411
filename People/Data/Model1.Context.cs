@@ -20,17 +20,14 @@ namespace People.Data
             : base("name=PeopleEntities")
         {
         }
-        public static void GetContext()
+        public static PeopleEntities GetContext()
         {
             if(_context == null)
             {
-                _context = new PeopleEntities;
+                _context = new PeopleEntities();
 
             }
-            else (Exception)
-            {
-
-            }
+            return  _context;
         }
     
         protected override void OnModelCreating(DbModelBuilder modelBuilder)

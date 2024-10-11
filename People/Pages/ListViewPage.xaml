@@ -10,14 +10,38 @@
 
     <Grid>
         <Grid.RowDefinitions>
+            <RowDefinition Height="70"></RowDefinition>
+            <RowDefinition></RowDefinition>
             <RowDefinition Height="50"></RowDefinition>
-            <RowDefinition></RowDefinition>
-            <RowDefinition></RowDefinition>
-            <RowDefinition></RowDefinition>
         </Grid.RowDefinitions>
-        <Grid Grid.Row="1">
-            <TextBox x:Name="TextBox"></TextBox>
-            <ComboBoxx x:Name="ComboBoxx"></ComboBoxx>
-        </Grid>
+        <ListView x:Name="PeopleListView" Grid.Row="1">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="500"></ColumnDefinition>
+                            <ColumnDefinition Width="150"></ColumnDefinition>
+                            <ColumnDefinition Width="150"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <StackPanel  Grid.Column="0" VerticalAlignment="Center" 
+                                    HorizontalAlignment="Left">
+                            <TextBlock Text="{Binding User.Name,StringFormat={}ФИО: {0}}" HorizontalAlignment="Left"></TextBlock>
+                            <TextBlock Text="{Binding Email, StringFormat={}Email: {0} }" HorizontalAlignment="Left"
+                                       ></TextBlock>
+                            <TextBlock Text="{Binding Birthday, StringFormat={}День рождения: {0} }" HorizontalAlignment="Left"
+                                       ></TextBlock>
+                            <TextBlock Text="{Binding PhoneNumber, StringFormat={}Номер телефона: {0} }" HorizontalAlignment="Left"
+                                      ></TextBlock>
+                        </StackPanel>
+                        <TextBlock Grid.Column="1"    Text="{Binding job.Work, StringFormat={}Должность: {0} }" HorizontalAlignment="Left"
+                                      ></TextBlock>
+                        <Button x:Name="R_Button" Content="Редактировать" Click="R_Button_Click" Grid.Column="2" HorizontalAlignment="Right"></Button>
+
+                    </Grid>
+                    
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        <Button x:Name="D_Button" Content="Добавить" Click="D_Button_Click" Grid.Row="3" ></Button>
     </Grid>
 </Page>

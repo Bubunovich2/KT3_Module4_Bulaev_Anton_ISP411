@@ -9,6 +9,17 @@
             <Setter Property="VerticalAlignment" Value="Center"></Setter>
             <Setter Property="HorizontalAlignment" Value="Center"></Setter>
         </Style>
+        <Style TargetType="Button">
+            <Setter Property="Width" Value="150"></Setter>
+            <Setter Property="Height" Value="50"></Setter>
+            <Setter Property="Background" Value="#FF498C51"></Setter>
+        </Style>
+        <Style TargetType="Label">
+            <Setter Property="VerticalAlignment" Value="Center"></Setter>
+            <Setter Property="HorizontalAlignment" Value="Center"></Setter>
+            <Setter Property="FontFamily" Value="Comic Sans MS"></Setter>
+        </Style>
         
+
     </Application.Resources>
 </Application>

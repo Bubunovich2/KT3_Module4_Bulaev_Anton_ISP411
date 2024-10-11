@@ -9,6 +9,6 @@ namespace People.Classes
 {
     class Manager
     {
-        public static Frame MainFrame { get; }
+        public static Frame MainFrame { get; set; }
     }
 }

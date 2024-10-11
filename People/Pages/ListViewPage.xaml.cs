@@ -1,4 +1,5 @@
-﻿using System;
+﻿using People.Data;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +24,18 @@ namespace People.Pages
         public ListViewPage()
         {
             InitializeComponent();
+
+            PeopleListView.ItemsSource = PeopleEntities.GetContext().User.ToList();
+        }
+
+        private void R_Button_Click(object sender, RoutedEventArgs e)
+        {
+            Classes.Manager.MainFrame.Navigate(new Pages.EditPage());
+        }
+
+        private void D_Button_Click(object sender, RoutedEventArgs e)
+        {
+            Classes.Manager.MainFrame.Navigate(new Pages.AddPage());
         }
     }
 }
