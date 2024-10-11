@@ -35,9 +35,7 @@
           </Key>
           <Property Name="Id" Type="int" Nullable="false" />
           <Property Name="IdWork" Type="int" />
-          <Property Name="FirstName" Type="nchar" MaxLength="50" />
           <Property Name="Name" Type="nchar" MaxLength="50" />
-          <Property Name="LastName" Type="nchar" MaxLength="50" />
           <Property Name="Email" Type="nchar" MaxLength="100" />
           <Property Name="Login" Type="nchar" MaxLength="30" />
           <Property Name="Password" Type="nchar" MaxLength="30" />
@@ -124,9 +122,7 @@
           </Key>
           <Property Name="Id" Type="Int32" Nullable="false" />
           <Property Name="IdWork" Type="Int32" />
-          <Property Name="FirstName" Type="String" MaxLength="50" FixedLength="true" Unicode="true" />
           <Property Name="Name" Type="String" MaxLength="50" FixedLength="true" Unicode="true" />
-          <Property Name="LastName" Type="String" MaxLength="50" FixedLength="true" Unicode="true" />
           <Property Name="Email" Type="String" MaxLength="100" FixedLength="true" Unicode="true" />
           <Property Name="Login" Type="String" MaxLength="30" FixedLength="true" Unicode="true" />
           <Property Name="Password" Type="String" MaxLength="30" FixedLength="true" Unicode="true" />
@@ -164,7 +160,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <EntityContainer Name="PeopleEntities" annotation:LazyLoadingEnabled="true">
+        <EntityContainer Name="PeopleEntities1" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="gender" EntityType="Self.gender" />
           <EntitySet Name="job" EntityType="Self.job" />
           <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" />
@@ -183,7 +179,7 @@
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="Хранилище PeopleModelContainer" CdmEntityContainer="PeopleEntities">
+        <EntityContainerMapping StorageEntityContainer="Хранилище PeopleModelContainer" CdmEntityContainer="PeopleEntities1">
           <EntitySetMapping Name="gender">
             <EntityTypeMapping TypeName="PeopleModel.gender">
               <MappingFragment StoreEntitySet="gender">
@@ -216,9 +212,7 @@
               <MappingFragment StoreEntitySet="User">
                 <ScalarProperty Name="Id" ColumnName="Id" />
                 <ScalarProperty Name="IdWork" ColumnName="IdWork" />
-                <ScalarProperty Name="FirstName" ColumnName="FirstName" />
                 <ScalarProperty Name="Name" ColumnName="Name" />
-                <ScalarProperty Name="LastName" ColumnName="LastName" />
                 <ScalarProperty Name="Email" ColumnName="Email" />
                 <ScalarProperty Name="Login" ColumnName="Login" />
                 <ScalarProperty Name="Password" ColumnName="Password" />

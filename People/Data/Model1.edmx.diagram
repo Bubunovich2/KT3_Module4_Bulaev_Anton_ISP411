@@ -4,11 +4,11 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="e22edbc6467444c0b5025a6a67d8d49c" Name="Diagram1">
-        <EntityTypeShape EntityType="PeopleModel.gender" Width="1.5" PointX="0.75" PointY="3.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="PeopleModel.job" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="PeopleModel.sysdiagrams" Width="1.5" PointX="5.75" PointY="2.125" IsExpanded="true" />
-        <EntityTypeShape EntityType="PeopleModel.User" Width="1.5" PointX="3" PointY="2.375" IsExpanded="true" />
+      <Diagram DiagramId="ac9fc06454b647078766e0d999849014" Name="Diagram1">
+        <EntityTypeShape EntityType="PeopleModel.gender" Width="1.5" PointX="0.75" PointY="2.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="PeopleModel.job" Width="1.5" PointX="0.75" PointY="6.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="PeopleModel.sysdiagrams" Width="1.5" PointX="5.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="PeopleModel.User" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
         <AssociationConnector Association="PeopleModel.FK_User_gender" ManuallyRouted="false" />
         <AssociationConnector Association="PeopleModel.FK_User_job" ManuallyRouted="false" />
       </Diagram>

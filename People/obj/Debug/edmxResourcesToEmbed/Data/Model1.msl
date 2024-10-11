@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-  <EntityContainerMapping StorageEntityContainer="Хранилище PeopleModelContainer" CdmEntityContainer="PeopleEntities">
+  <EntityContainerMapping StorageEntityContainer="Хранилище PeopleModelContainer" CdmEntityContainer="PeopleEntities1">
     <EntitySetMapping Name="gender">
       <EntityTypeMapping TypeName="PeopleModel.gender">
         <MappingFragment StoreEntitySet="gender">
@@ -33,9 +33,7 @@
         <MappingFragment StoreEntitySet="User">
           <ScalarProperty Name="Id" ColumnName="Id" />
           <ScalarProperty Name="IdWork" ColumnName="IdWork" />
-          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
           <ScalarProperty Name="Name" ColumnName="Name" />
-          <ScalarProperty Name="LastName" ColumnName="LastName" />
           <ScalarProperty Name="Email" ColumnName="Email" />
           <ScalarProperty Name="Login" ColumnName="Login" />
           <ScalarProperty Name="Password" ColumnName="Password" />

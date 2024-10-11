@@ -25,7 +25,7 @@ namespace People.Pages
         {
             InitializeComponent();
 
-            PeopleListView.ItemsSource = PeopleEntities.GetContext().User.ToList();
+            PeopleListView.ItemsSource = PeopleEntities1.GetContext().User.ToList();
         }
 
         private void R_Button_Click(object sender, RoutedEventArgs e)

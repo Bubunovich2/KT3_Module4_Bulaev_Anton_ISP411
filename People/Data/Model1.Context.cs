@@ -13,23 +13,23 @@ namespace People.Data
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class PeopleEntities : DbContext
+    public partial class PeopleEntities1 : DbContext
     {
-        public static PeopleEntities _context;
-        public PeopleEntities()
-            : base("name=PeopleEntities")
+        public static PeopleEntities1 _context;
+        public PeopleEntities1()
+            : base("name=PeopleEntities1")
         {
         }
-        public static PeopleEntities GetContext()
+        public static PeopleEntities1 GetContext()
         {
-            if(_context == null)
+            if (_context == null)
             {
-                _context = new PeopleEntities();
+                _context = new PeopleEntities1();
 
             }
-            return  _context;
+            return _context;
         }
-    
+
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             throw new UnintentionalCodeFirstException();

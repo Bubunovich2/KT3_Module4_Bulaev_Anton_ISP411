@@ -32,9 +32,7 @@
     </Key>
     <Property Name="Id" Type="Int32" Nullable="false" />
     <Property Name="IdWork" Type="Int32" />
-    <Property Name="FirstName" Type="String" MaxLength="50" FixedLength="true" Unicode="true" />
     <Property Name="Name" Type="String" MaxLength="50" FixedLength="true" Unicode="true" />
-    <Property Name="LastName" Type="String" MaxLength="50" FixedLength="true" Unicode="true" />
     <Property Name="Email" Type="String" MaxLength="100" FixedLength="true" Unicode="true" />
     <Property Name="Login" Type="String" MaxLength="30" FixedLength="true" Unicode="true" />
     <Property Name="Password" Type="String" MaxLength="30" FixedLength="true" Unicode="true" />
@@ -72,7 +70,7 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <EntityContainer Name="PeopleEntities" annotation:LazyLoadingEnabled="true">
+  <EntityContainer Name="PeopleEntities1" annotation:LazyLoadingEnabled="true">
     <EntitySet Name="gender" EntityType="Self.gender" />
     <EntitySet Name="job" EntityType="Self.job" />
     <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" />
